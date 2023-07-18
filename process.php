@@ -15,10 +15,12 @@
     // Query
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
+    $gender = $_POST['gender'];
+    $dateofbirth = $_POST['date_of_birth'];
     $email = $_POST['email'];
 
-    $sql = "INSERT INTO users (firstname, lastname, email) 
-    VALUES ('$firstname', '$lastname', '$email')";
+    $sql = "INSERT INTO users (firstname, lastname, gender, date_of_birth, email) 
+    VALUES ('Samuel', 'Ogbonnaya', 'm', '2002-10-04', 'codedsammie090@gmail.com')";
 
     $result = $con->query($sql);
 
